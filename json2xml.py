@@ -116,4 +116,4 @@ with open("labels.txt") as f:
             
             xml_file = txt2xml(file_name[0],labels_dict)
         xml_file.write('</annotation>')
-        urllib_download(path,'E:\\所有文件的多标签\\save_img\\img\\{}'.format(name))
+        urllib_download(path,r'E:\\所有文件的多标签\\save_img\\img\\{}'.format(name))

@@ -1,12 +1,11 @@
-#-------------------------------------#
-#       调用摄像头检测
-#-------------------------------------#
 from PIL import Image
 import numpy as np
 import cv2
 import time
 import os
 import tqdm
+
+
 #视频文件夹
 video = r'./公章/'
 video_path = os.listdir(video)
@@ -16,7 +15,7 @@ for vid in tqdm.tqdm(video_path):
     
     capture=cv2.VideoCapture(video+vid) # capture=cv2.VideoCapture("1.mp4")
     
-    timeRate = 0.5  # 截取视频帧的时间间隔（这里是每隔10秒截取一帧）
+    timeRate = 5  # 截取视频帧的时间间隔
     fps = 0.0
     while(True):
         t1 = time.time()

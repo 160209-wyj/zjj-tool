@@ -77,20 +77,20 @@ for file in dire:
 
 
  
-读入原图片
-import os
-import tqdm
-import cv2
-path = r'./normal/'
-dir = os.listdir(path)
+# 读入原图片
+# import os
+# import tqdm
+# import cv2
+# path = r'./normal/'
+# dir = os.listdir(path)
 
-for file in tqdm.tqdm(dir):
-    # print(img)
-    img = cv2.imread(path+file)
-    #print(img)
-    try:
-        img_test1 = cv2.resize(img, (224,224))
-    except:
-        cv2.imwrite('normal_resize/{}'.format(file),img_test1)
-    cv2.imwrite('normal_resize/{}'.format(file),img_test1)
+# for file in tqdm.tqdm(dir):
+#     # print(img)
+#     img = cv2.imread(path+file)
+#     #print(img)
+#     try:
+#         img_test1 = cv2.resize(img, (224,224))
+#     except:
+#         cv2.imwrite('normal_resize/{}'.format(file),img_test1)
+#     cv2.imwrite('normal_resize/{}'.format(file),img_test1)
 
